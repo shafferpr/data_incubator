@@ -73,4 +73,4 @@ def next6():
 #return render_template('layout_lulu.html',num=1,question='Which fruit do you like best?',ans1='banana',ans2='mango',ans3='pineapple')
 
 if __name__ == '__main__':
-    app_lulu.run(debug=True)
+    app_lulu.run(debug=False)
