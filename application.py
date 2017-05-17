@@ -55,8 +55,15 @@ def next5():
     else:
         return redirect('/next6')
 
-@app.route('/next6',methods=['GET'])
+@app.route('/next6',methods=['GET','POST'])
 def next6():
+    if request.method == 'GET':
+        return render_template('6th.html')
+    else:
+        return redirect('/next7')
+
+@app.route('/next7',methods=['GET'])
+def next7():
     if request.method == 'GET':
         return render_template('end.html')
 
