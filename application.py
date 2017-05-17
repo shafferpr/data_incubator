@@ -3,7 +3,7 @@ app_lulu = Flask(__name__)
 
 app_lulu.vars={}
 
-@app_lulu.route('/index',methods=['GET','POST'])
+@app_lulu.route('/',methods=['GET','POST'])
 def index():
     # this is a comment, just like in Python
     # note that the function name and the route argument
